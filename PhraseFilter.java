@@ -32,7 +32,7 @@ public class PhraseFilter implements Filter {
                 return true;
             }  
         }
-        if(where.equals("end"))
+        if(where.equals("any"))
         {
             String title = qe.getInfo();
             if(title.indexOf(phrase)!=-1)
@@ -41,5 +41,9 @@ public class PhraseFilter implements Filter {
             }
         }
         return false;
+    }
+    public String getName()
+    {
+        return "Phrase Filter";
     }
 }

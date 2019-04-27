@@ -17,5 +17,8 @@ public class DistanceFilter implements Filter {
     {
         return qe.getLocation().distanceTo(loc)<maxDist;
     }
-    
+    public String getName()
+    {
+        return "Distance Filter";
+    }
 }
